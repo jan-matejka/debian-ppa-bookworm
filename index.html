@@ -1,0 +1,5 @@
+https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html
+
+$ curl -s --compressed "https://jan-matejka.github.io/debian-ppa-bookworm/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/jmatejka_debian-ppa-bookworm.gpg >/dev/null
+
+$ sudo curl -s --compressed -o /etc/apt/sources.list.d/jmatejka_debian-ppa-bookworm.list "https://jan-matejka.github.io/debian-ppa-bookworm/my_list_file.list"
