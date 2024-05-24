@@ -13,3 +13,18 @@ Section: misc
 Priority: optional
 Description: Literate Functional Tests for the CLI
 
+Package: xdgenv
+Version: 0.2.0-1
+Architecture: all
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 17
+Depends: zsh
+Filename: ./xdgenv_0.2.0-1_all.deb
+Size: 3496
+MD5sum: 0ad8d9953e5bf191333471d3e86dcb8a
+SHA1: b1f8cdad7dd34234e8280d9158138b42f39ec762
+SHA256: 7eb37481de5a31489b953b8fa868c6b5d40bc971a94323b6e954835953652ea4
+Section: misc
+Priority: optional
+Description: Runtime agnostic xdg environment variables initializer for applications
+
