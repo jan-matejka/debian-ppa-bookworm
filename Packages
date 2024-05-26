@@ -1,3 +1,18 @@
+Package: cnb
+Version: 0.2.1-1
+Architecture: all
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 24
+Depends: zsh, curl, xdgenv
+Filename: ./cnb_0.2.1-1_all.deb
+Size: 6912
+MD5sum: 7526d47f936216f5e25f73f4d3e71555
+SHA1: 0e00092597c16a6a03112274b420566f1b679724
+SHA256: 86e815b80150039a5c0b201984cdbc8f8d0fcc2192cfa35401f34c640a058597
+Section: misc
+Priority: optional
+Description: http://cnb.cz daily czech currency exchange rates in your command line
+
 Package: dram
 Version: 0.8-1
 Architecture: amd64

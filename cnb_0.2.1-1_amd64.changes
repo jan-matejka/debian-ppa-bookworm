@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 26 May 2024 10:24:12 +0200
+Source: cnb
+Binary: cnb
+Architecture: source all
+Version: 0.2.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Changed-By: Jan Matějka <jan@matejka.ninja>
+Description:
+ cnb        - http://cnb.cz daily czech currency exchange rates in your command
+Changes:
+ cnb (0.2.1-1) unstable; urgency=medium
+ .
+   [ Jan Matějka ]
+   * Initial release.
+Checksums-Sha1:
+ 2a0d6b0bd3fce95f1d75006bbb592bd14b03a447 1310 cnb_0.2.1-1.dsc
+ fd978e1f92283aa50279ee58d3153a47c6e33795 5995 cnb_0.2.1.orig.tar.gz
+ dc11aeafd25122f8fc3221a660b8a9bc18add322 896 cnb_0.2.1-1.debian.tar.xz
+ 0e00092597c16a6a03112274b420566f1b679724 6912 cnb_0.2.1-1_all.deb
+ b308ba889172cf3ba29023d95188cda131d120c8 6771 cnb_0.2.1-1_amd64.buildinfo
+Checksums-Sha256:
+ 1506be19fb532bd37eeedc9f1ce44e0f496ffec4efdf96aacc09ab21492ee302 1310 cnb_0.2.1-1.dsc
+ 88c99783fd257be86a2a00fc16db2839f8fb8ef3af8fcee02fa546b6098a5a33 5995 cnb_0.2.1.orig.tar.gz
+ 31bc31acf37cb375753734ab95eaaf63a5f47bcd770a0ba2f95551d2ed5dad9d 896 cnb_0.2.1-1.debian.tar.xz
+ 86e815b80150039a5c0b201984cdbc8f8d0fcc2192cfa35401f34c640a058597 6912 cnb_0.2.1-1_all.deb
+ 57bff5e8dd4f9f3f12b95158fadef9c18042cf46cc646f570207e2f279b813e0 6771 cnb_0.2.1-1_amd64.buildinfo
+Files:
+ 1cb17417e573eb38afaa059b41738836 1310 misc optional cnb_0.2.1-1.dsc
+ 8dd831575b41d0308bf4aebd79097b5d 5995 misc optional cnb_0.2.1.orig.tar.gz
+ f4944e94dbaa7007dc331dd3d763b447 896 misc optional cnb_0.2.1-1.debian.tar.xz
+ 7526d47f936216f5e25f73f4d3e71555 6912 misc optional cnb_0.2.1-1_all.deb
+ aaa5934d3c028eeffa8000f546b40003 6771 misc optional cnb_0.2.1-1_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCgAwFiEEhFuAua0S20AM5TT2g37tEPl6NqEFAmZS8aASHGphbkBtYXRl
+amthLm5pbmphAAoJEIN+7RD5ejahu+gIALOUwmH1yZsH7c6eSfiFp9bmySr/EUCI
+YT5iVCE/pD4EQZqpR1XbFb42KOiCVXMoNUXSF/frU6NDXtcqK7PT+s+zjDoFcCoP
+Jxydia6u5ycdPMfQUNDaQf8dOgpKBNwgk+bxbZLIdUYEY8b343/Th8LaX3/ieN9w
+4GxB4WF59a4VymD1YdTds6AqZOiAevzbbN5NdK1zRjvSJxMVVoHURGA4EVbAlnjm
+kIALS6LOISfct5TfABGFhnCgGwm1iOaJwoobBF+4D+6UaemtcViEo4LdSxaQcime
+ZN9buQZkCqidy0TX8Nb4kaUDrCSjgAX99QqwvgMrE1/zGoCUPg+hc2g=
+=fras
+-----END PGP SIGNATURE-----
