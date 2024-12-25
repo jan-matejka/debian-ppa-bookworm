@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Tue, 20 Aug 2024 09:43:54 -0300
+Source: podman-compose
+Binary: podman-compose
+Architecture: source all
+Version: 1.2.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Changed-By: Athos Ribeiro <athoscribeiro@gmail.com>
+Description:
+ podman-compose - Run docker-compose.yml using podman
+Changes:
+ podman-compose (1.2.0-2) unstable; urgency=medium
+ .
+   * d/tests/build.sh: re-enable test. While this test requires
+     isolation-machine, which is not available in the Debian CI infrastructure,
+     it is still useful for local autopkgtest runs and it also runs in
+     downstream derivative infrastructures (namely, Ubuntu).
+   * d/podman-compose.1: update manpage.
+Checksums-Sha1:
+ 852c072b43b053dec9a6ea6e1865b1862f071e26 1290 podman-compose_1.2.0-2.dsc
+ 5991e1b75bfdd817f0a6c69ab5e4eca7fddd277d 4228 podman-compose_1.2.0-2.debian.tar.xz
+ a5a517ed2c43e6df95bb04ec52882b9468c0509c 45536 podman-compose_1.2.0-2_all.deb
+ 46729a3220fbe483290fd59741230b993aa9c11c 6902 podman-compose_1.2.0-2_amd64.buildinfo
+Checksums-Sha256:
+ a106ab7fe517bc021a28f1a223e4dabc19abaf4c62526f49ed3ddcc52dc46c8d 1290 podman-compose_1.2.0-2.dsc
+ f671772a032f592ca8744be1277a7511845deeade43d0955b52cf0430016e984 4228 podman-compose_1.2.0-2.debian.tar.xz
+ b1d9f596304343ed3b0df43670a7762b35865e70ab774e8e96cd9fae56b63d04 45536 podman-compose_1.2.0-2_all.deb
+ 62728e21169d4bf3788b723e62f3bd4c734814c2a80bef7493b7a43939b31055 6902 podman-compose_1.2.0-2_amd64.buildinfo
+Files:
+ 1abd0e5deeb4e804b5ad01b14bc4798a 1290 admin optional podman-compose_1.2.0-2.dsc
+ fa2cae2053ff6a2cb02d282eae3486a2 4228 admin optional podman-compose_1.2.0-2.debian.tar.xz
+ be90597fe5ecff4ea2a6097c5fe01e24 45536 admin optional podman-compose_1.2.0-2_all.deb
+ 9752995818940aa0810af1d2f9df6f93 6902 admin optional podman-compose_1.2.0-2_amd64.buildinfo
