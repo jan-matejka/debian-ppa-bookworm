@@ -1,4 +1,4 @@
-KEY=837EED10F97A36A1
+KEY=2B524183A4D7D908
 
 dist=dists/bookworm
 
