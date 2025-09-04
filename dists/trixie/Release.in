@@ -1,0 +1,8 @@
+Origin: JMA-PPA
+Label: JMA-PPA
+Suite: stable
+Version: 13.0
+Codename: trixie
+Architectures: all amd64
+Components: main
+Description: Debian 13.0 Jan Matejka's PPA

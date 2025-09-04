@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 21 May 2024 04:26:12 +0200
+Source: xdgenv
+Binary: xdgenv
+Architecture: source all
+Version: 0.2.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Changed-By: Jan Matějka <jan@matejka.ninja>
+Description:
+ xdgenv     - Runtime agnostic xdg environment variables initializer for applic
+Changes:
+ xdgenv (0.2.0-1) unstable; urgency=medium
+ .
+   [ Jan Matějka ]
+   * Initial release.
+Checksums-Sha1:
+ ef54cf16a06c3787562203af061c1dcaf497ce66 1337 xdgenv_0.2.0-1.dsc
+ 262a9929a25e78cac02729e6ed98397e408bc9b9 4252 xdgenv_0.2.0.orig.tar.gz
+ 85083bce21cc3b816087ac656e67e5860df53edf 884 xdgenv_0.2.0-1.debian.tar.xz
+ b1f8cdad7dd34234e8280d9158138b42f39ec762 3496 xdgenv_0.2.0-1_all.deb
+ ac14483e65ce465ac8695aa9ad07750d5a890184 6795 xdgenv_0.2.0-1_amd64.buildinfo
+Checksums-Sha256:
+ a2bfd3f27b601f321e7f4f14babaab8ddabe7ddf1ace03c7c9cf5dc4bae346fd 1337 xdgenv_0.2.0-1.dsc
+ aa12fce4155d440330b776a8fb4485651eea9132616a0a85ac61f8c14be55d40 4252 xdgenv_0.2.0.orig.tar.gz
+ 3ec13419a8b0bd87f7fe09ff844a169be16125d65d84a2527ee2097b6b3abd9b 884 xdgenv_0.2.0-1.debian.tar.xz
+ 7eb37481de5a31489b953b8fa868c6b5d40bc971a94323b6e954835953652ea4 3496 xdgenv_0.2.0-1_all.deb
+ 39da188be1188e2e32be05679399e57b921fb1f8688cb936de46b4480f862acc 6795 xdgenv_0.2.0-1_amd64.buildinfo
+Files:
+ b6d419d30505979e0b0aec05ffe55a9a 1337 misc optional xdgenv_0.2.0-1.dsc
+ 84d9af0e026dfe6be15736ef9cba58c7 4252 misc optional xdgenv_0.2.0.orig.tar.gz
+ 62b794967f12a0889f0ddeb871f01014 884 misc optional xdgenv_0.2.0-1.debian.tar.xz
+ 0ad8d9953e5bf191333471d3e86dcb8a 3496 misc optional xdgenv_0.2.0-1_all.deb
+ b8a38d7bd62836c54cfb834044e031c2 6795 misc optional xdgenv_0.2.0-1_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCgAwFiEEhFuAua0S20AM5TT2g37tEPl6NqEFAmZQP8sSHGphbkBtYXRl
+amthLm5pbmphAAoJEIN+7RD5ejahvm0H/0tlC/3i28KMFiwoL+tQfyHwx/wonqLH
+kgDAchqGmY7JXI1fmNK0CDI0vNDfepjBI46liplA9eD2OyeDP5HnIcA2AZCxBjkN
+jotZl3fJziD/QRe89yiNkPzUuoOPl3KqTTWY9KeSqjEtyJxVAahz4wWT/CWVNBeg
+2zLV4e0BxK1Rrrnzm5ZbqhjrYjiMst58Vpr75flbZaLUVpKRpJh3NWy+9OlLtUKg
+r6F7WyGrXj6DlNlycQPbHEZBuxzcCcfBQmuW2D/ubnU4hSA1Nr4mhRd1GUhl80RD
+oTmgYqIqpc4WbTKOrto7Vxs5/vTfDbfDjQKJZvkX4OZ85j19D1wEKII=
+=RANE
+-----END PGP SIGNATURE-----
