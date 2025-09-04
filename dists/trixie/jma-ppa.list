@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/jmatejka_debian-ppa-bookworm.gpg] https://jan-matejka.github.io/debian-ppa-bookworm trixie main

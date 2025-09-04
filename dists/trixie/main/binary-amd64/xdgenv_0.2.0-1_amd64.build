@@ -1,0 +1,107 @@
+ dpkg-buildpackage -us -uc -ui -i -I
+dpkg-buildpackage: info: source package xdgenv
+dpkg-buildpackage: info: source version 0.2.0-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Jan Matějka <jan@matejka.ninja>
+ dpkg-source -i -I --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+prefix=/usr dh clean
+   dh_auto_clean
+	make -j8 clean
+make[1]: Entering directory '/home/yac/git/hd/xdgenv-debian'
+rm -f -r _build dram/*.t.err
+make[1]: Leaving directory '/home/yac/git/hd/xdgenv-debian'
+   dh_clean
+ dpkg-source -i -I -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building xdgenv using existing ./xdgenv_0.2.0.orig.tar.gz
+dpkg-source: info: building xdgenv in xdgenv_0.2.0-1.debian.tar.xz
+dpkg-source: info: building xdgenv in xdgenv_0.2.0-1.dsc
+ debian/rules build
+prefix=/usr dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j8 "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/yac/git/hd/xdgenv-debian'
+install -d _build/man/man1
+install -m755 -D src/xdgenv.zsh _build/bin/xdgenv
+install -m755 -D src/xdgenv/exec.zsh _build/bin/xdgenv-exec
+install -m755 -D src/xdgenv/prelude.zsh _build/bin/xdgenv-prelude
+rst2man Documentation/xdgenv-exec.rst _build/man/man1/xdgenv-exec.1
+rst2man Documentation/xdgenv.rst _build/man/man1/xdgenv.1
+make[1]: Leaving directory '/home/yac/git/hd/xdgenv-debian'
+   dh_auto_test
+	make -j8 check
+make[1]: Entering directory '/home/yac/git/hd/xdgenv-debian'
+mkdir -p _build/fakeroot
+DESTDIR=_build/fakeroot make install
+make[2]: Entering directory '/home/yac/git/hd/xdgenv-debian'
+install -d _build/fakeroot/usr/share/man/man1
+install -m755 -D _build/bin/xdgenv _build/fakeroot/usr/bin/xdgenv
+install -m755 -D _build/bin/xdgenv-exec _build/fakeroot/usr/bin/xdgenv-exec
+install -m755 -D _build/bin/xdgenv-prelude _build/fakeroot/usr/bin/xdgenv-prelude
+install -m644 _build/man/man1/xdgenv-exec.1 _build/fakeroot/usr/share/man/man1/xdgenv-exec.1
+install -m644 _build/man/man1/xdgenv.1 _build/fakeroot/usr/share/man/man1/xdgenv.1
+make[2]: Leaving directory '/home/yac/git/hd/xdgenv-debian'
+PATH="/home/yac/git/hd/xdgenv-debian/_build/fakeroot/usr/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11" dram -s zsh dram
+..
+
+# Ran 2 tests.
+make[1]: Leaving directory '/home/yac/git/hd/xdgenv-debian'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+prefix=/usr dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install --destdir=debian/xdgenv/
+	make -j8 install DESTDIR=/home/yac/git/hd/xdgenv-debian/debian/xdgenv AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/yac/git/hd/xdgenv-debian'
+install -d /home/yac/git/hd/xdgenv-debian/debian/xdgenv/usr/share/man/man1
+install -m755 -D _build/bin/xdgenv /home/yac/git/hd/xdgenv-debian/debian/xdgenv/usr/bin/xdgenv
+install -m755 -D _build/bin/xdgenv-exec /home/yac/git/hd/xdgenv-debian/debian/xdgenv/usr/bin/xdgenv-exec
+install -m755 -D _build/bin/xdgenv-prelude /home/yac/git/hd/xdgenv-debian/debian/xdgenv/usr/bin/xdgenv-prelude
+install -m644 _build/man/man1/xdgenv-exec.1 /home/yac/git/hd/xdgenv-debian/debian/xdgenv/usr/share/man/man1/xdgenv-exec.1
+install -m644 _build/man/man1/xdgenv.1 /home/yac/git/hd/xdgenv-debian/debian/xdgenv/usr/share/man/man1/xdgenv.1
+make[1]: Leaving directory '/home/yac/git/hd/xdgenv-debian'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package xdgenv: substitution variable ${shlibs:Depends} used, but is not defined
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'xdgenv' in '../xdgenv_0.2.0-1_all.deb'.
+ dpkg-genbuildinfo -O../xdgenv_0.2.0-1_amd64.buildinfo
+ dpkg-genchanges -O../xdgenv_0.2.0-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source -i -I --after-build .
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian xdgenv_0.2.0-1_amd64.changes ...
+E: xdgenv: extended-description-is-empty
+W: xdgenv: copyright-without-copyright-notice
+W: xdgenv: initial-upload-closes-no-bugs [usr/share/doc/xdgenv/changelog.Debian.gz:1]
+W: xdgenv: no-manual-page [usr/bin/xdgenv-prelude]
+W: xdgenv: unusual-interpreter /bin/false [usr/bin/xdgenv-prelude]
+W: xdgenv: zero-byte-file-in-doc-directory [usr/share/doc/xdgenv/copyright]
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile dsc xdgenv_0.2.0-1.dsc Jan Matějka <jan@matejka.ninja>
+
+ fixup_buildinfo xdgenv_0.2.0-1.dsc xdgenv_0.2.0-1_amd64.buildinfo
+ signfile buildinfo xdgenv_0.2.0-1_amd64.buildinfo Jan Matějka <jan@matejka.ninja>
+
+ fixup_changes dsc xdgenv_0.2.0-1.dsc xdgenv_0.2.0-1_amd64.changes
+ fixup_changes buildinfo xdgenv_0.2.0-1_amd64.buildinfo xdgenv_0.2.0-1_amd64.changes
+ signfile changes xdgenv_0.2.0-1_amd64.changes Jan Matějka <jan@matejka.ninja>
+
+Successfully signed dsc, buildinfo, changes files

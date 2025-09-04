@@ -1,0 +1,38 @@
+Origin: JMA-PPA
+Label: JMA-PPA
+Suite: oldstable
+Version: 12.11
+Codename: bookworm
+No-Support-for-Architecture-all: Packages
+Architectures: all amd64
+Components: main
+Description: Debian 12 Jan Matejka's PPA
+Date: Thu, 04 Sep 2025 12:32:30 +0000
+MD5Sum:
+ 4e5df32c488b2372da1deebd01ced766              245 Release
+ cb3c5130032f4aac6b986160f6eefd82             2135 main/Packages
+ 1f7360af9d39a885eb9c8944aeb1f8e0             1100 main/Packages.gz
+ 17bc4631a0e10350d51a7bda5a47fa5b             1133 main/Packages.gz.gz
+ 9bd978109be612f0406eee79519b8abe              879 main/binary-all/Packages.gz
+ 13161d2b3c5ef8e2644ae8e38c3f2625              383 main/binary-amd64/Packages.gz
+SHA1:
+ 4cb66086314dccd7d492d8e9d7830d5351754ae3              245 Release
+ c1bf89d9e8047ec37a2f1efe64721542436f4a69             2135 main/Packages
+ 8dcd688456f97a8c9461b25d70e943a1b57deb95             1100 main/Packages.gz
+ ad6afd99476d035aa131ed0f0c4039a934ca211a             1133 main/Packages.gz.gz
+ a46cea542c1545e9462b60fda0265ad12ee27255              879 main/binary-all/Packages.gz
+ 95b5455209aa2817db8bd1bf853c5aa06ca8edfd              383 main/binary-amd64/Packages.gz
+SHA256:
+ 088938d65e74ded41db28335c51c2a707fdb8b38240dcec76cfd64b4b60485f2              245 Release
+ e25477bc5318cb462aef82a29cea775c644cc4bcae009721258a0ff2bb1f281f             2135 main/Packages
+ e47e6e5a6512b1749cafdffae8ccaebb6fa3134a0cc6a8c0c70c97cfcdd36d3e             1100 main/Packages.gz
+ 20fc4556500e810c562feacc35476da7197bcbcdc751cf9df76e26f5178b6d45             1133 main/Packages.gz.gz
+ 84a3b11405df56f885c550012895c0713bd3dc3e39abe72bab22bf3bf949b68e              879 main/binary-all/Packages.gz
+ df52802b16abf48ef9f7ddb1322ccbbe77e96526e9d86f1e81c459ab48b3cb27              383 main/binary-amd64/Packages.gz
+SHA512:
+ 189d05ad330df07557c944459357466c0c4e659ade501e8ec2e174c8de72f6dae940eb39c2b29b9f9644cc1f302851ce872a57d01034f74b18d0bfb2ef080342              245 Release
+ d37f4f05120aa3e3a7140003c07ec0422918483d255b1c4cc4fdf1e89b0c10e456cbef7be55965368e8ecb51543ebe1707b9252629132d5e762f475a6029e067             2135 main/Packages
+ 7f97bb5e478d1537d92712a711941270f2162b34af5941297d9d33ae50987241702821f8e4a2cf23a6d3bff36d0f493a8acbd1c5586edb24f2fae063a58fcc5b             1100 main/Packages.gz
+ 1e16d36a8443fa93d53c80052371e6ed8bd700dfd206d73dd81ae19dc8e2d0b830dec44639ee666c52c965b05d00356bbef61da9ece5a4164aa4fbe94198de71             1133 main/Packages.gz.gz
+ f03fb907b3228adc451da178fec812048ca035abb2e66e1782410313ce92cca568f71d4d18f377dd59370357a674e4058c58c9c55d0ba4648cac804dbfc7668d              879 main/binary-all/Packages.gz
+ 231cd37a93c66fedb8afb7468c73f0d9596bffdf0e1e02b2a308e8ff1fab0809e80d444c40440ae0af06b043c7a74443eae78fddb7f923075aad6051756fbdca              383 main/binary-amd64/Packages.gz
