@@ -3,7 +3,6 @@ Label: JMA-PPA
 Suite: oldstable
 Version: 12.11
 Codename: bookworm
-No-Support-for-Architecture-all: Packages
 Architectures: all amd64
 Components: main
 Description: Debian 12 Jan Matejka's PPA
