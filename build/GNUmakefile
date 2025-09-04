@@ -1,6 +1,11 @@
 KEY=837EED10F97A36A1
 
-build:
+.PHONY: build
+build: index.html
+
+index.html: doc/README.rst
+
+	rst2html $< > $@
 
 release:
 
