@@ -8,8 +8,6 @@ dist=dists/bookworm
 arches=( all amd64 )
 
 pushd -q $dist
-rm -f Release Release.gpg InRelease
-
 pushd -q main
 dpkg-scanpackages --multiversion . | gzip -c - > Packages.gz
 
@@ -21,6 +19,8 @@ done
 
 popd -q
 
-apt-ftparchive release . > Release
+{ cat Release.in; apt-ftparchive release . } > Release
 gpg --default-key "${KEY}" -abs -o - Release > Release.gpg
 gpg --default-key "${KEY}" --clearsign -o - Release > InRelease
+
+popd -q
