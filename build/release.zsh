@@ -8,23 +8,21 @@ dists=( bookworm trixie )
 arches=( all amd64 )
 
 for dist in $dists; do
-  pushd -q dists/$dist
-  pushd -q main
-  dpkg-scanpackages --multiversion . > Packages
-  xz -kzf Packages
+  dist_dir=dists/$dist
+  comp_dir=$dist_dir/main
+  dpkg-scanpackages --multiversion $comp_dir > $comp_dir/Packages
+  xz -kzf $comp_dir/Packages
 
   for arch in $arches; do
-    pushd -q binary-$arch
-    dpkg-scanpackages --multiversion . > Packages
-    xz -kzf Packages
-    popd -q
+    arch_dir=$comp_dir/binary-$arch
+    dpkg-scanpackages --multiversion $arch_dir > $arch_dir/Packages
+    xz -kzf $arch_dir/Packages
   done
 
-  popd -q
-
-  { cat Release.in; apt-ftparchive release . } > Release
-  gpg --default-key "${KEY}" -abs -o - Release > Release.gpg
-  gpg --default-key "${KEY}" --clearsign -o - Release > InRelease
-
-  popd -q
+  { cat $dist_dir/Release.in; apt-ftparchive release $dist_dir } \
+    > $dist_dir/Release
+  gpg --default-key "${KEY}" -abs -o - $dist_dir/Release \
+    > $dist_dir/Release.gpg
+  gpg --default-key "${KEY}" --clearsign -o - $dist_dir/Release \
+    > $dist_dir/InRelease
 done
