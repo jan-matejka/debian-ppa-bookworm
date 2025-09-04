@@ -1,0 +1,15 @@
+Package: dram
+Version: 0.8-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 1191
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libphobos2-ldc-shared100 (>= 1:1.30.0)
+Filename: dists/bookworm/main/binary-amd64/dram_0.8-1_amd64.deb
+Size: 235880
+MD5sum: dbb54d88d3f06e8aa0deb1f53905e673
+SHA1: dc7117002b6231d2db726015a7aa66faf578b1be
+SHA256: 8b20254ff542126b6bedc413fac74fabb1b5ea2f25715fcf34b79f716af6157f
+Section: misc
+Priority: optional
+Description: Literate Functional Tests for the CLI
+

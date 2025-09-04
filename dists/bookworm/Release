@@ -1,17 +1,41 @@
-Date: Sun, 26 May 2024 08:24:53 +0000
+Origin: JMA-PPA
+Label: JMA-PPA
+Suite: oldstable
+Version: 12.11
+Codename: bookworm
+Architectures: all amd64
+Components: main
+Description: Debian 12 Jan Matejka's PPA
+Date: Fri, 05 Sep 2025 08:33:07 +0000
 MD5Sum:
- 2a3aab9bf2be5a0100ac11dde42a458a             1407 Packages
- 4b306242599b4152fbef1c77abf02c06              763 Packages.gz
- 93ed4b403e05dfd91ef4b801bb4c15f5               38 Release
+ 9f66705cd9dda7d66dc2c23eeb279af8              203 Release
+ faee13e6b4ee37dedb49feb0d0164b72             2253 main/Packages
+ 5a244cb10892c65963943d1286da4672             1196 main/Packages.xz
+ 66d799dbdfc2910f77824a489c55bb80             1730 main/binary-all/Packages
+ 930da8a4d257b81e058f4e0cd278adc9              980 main/binary-all/Packages.xz
+ 577491f778f18459d57d60c8ec190109              523 main/binary-amd64/Packages
+ 04033e385746ca504e70fe618efcb8db              484 main/binary-amd64/Packages.xz
 SHA1:
- 30ce39c09de532b0909835f30aaa9482c27e2405             1407 Packages
- 7b5d33da1e1bf3fbf4d888913d2ae6932832a0aa              763 Packages.gz
- e0d75e4edb936878b2d7c533e1d923bc8875da21               38 Release
+ ed7ae548f60491845fad246bbd07d82c73489d50              203 Release
+ 8acd763daf25dc07583b26cad34d5ab3fa66a829             2253 main/Packages
+ bfebd8cffe81df101d2915e803b6a8dd50cc107b             1196 main/Packages.xz
+ 7e54c93354afbf81ddb4f8ab1cc96bd2df57e92e             1730 main/binary-all/Packages
+ 9a4e7e0d061ca992d15b061c0938b9f5863b608e              980 main/binary-all/Packages.xz
+ 7985d1d753d29c931f663ec34e739f63a09c3bb2              523 main/binary-amd64/Packages
+ 54ed693a241e022c8b3d8fe63e0248f752cc905c              484 main/binary-amd64/Packages.xz
 SHA256:
- e9e1d532965f93f3960f8d4690eae5b5583eb9abb92cb934ac74babdfd3dd6e6             1407 Packages
- fcda8caaee99c0b4fd64ec1f9ea068dacdac96a90fbfbdf7b6335129701885f3              763 Packages.gz
- 1fd283cf73c1e737bba6ebf26feef14353e95f4ae8f6ace3cea26c9c612cde1c               38 Release
+ da276e549ab71d5f69038fb413d24b11744cfe032ed6d92edfa3938e77017dee              203 Release
+ 8703aa3d45d42afa31e5b21c947ad66fbcbe11a7ddaaa24e274dbdbce1262df1             2253 main/Packages
+ f69750ec8580bd1c1224a82a851854b3024fdf28e74f4e64a43568b4ddd636a7             1196 main/Packages.xz
+ ec2bc8487b983dd6c9fa1982515ce62c3c4e7e63a6fa2b29a391218d116e5371             1730 main/binary-all/Packages
+ a5e8c0b821283fe5e259abd66a78743dcca161297fdcc5925253e88dc8d7be9a              980 main/binary-all/Packages.xz
+ a85b19172954aeba240ae1508783e975b44a9a47a36237ab6604a2e8bcfe0922              523 main/binary-amd64/Packages
+ 56bef8b5a08a057b2f402ccf53a4f78c10a601961fd51bce283ff1b4943097c7              484 main/binary-amd64/Packages.xz
 SHA512:
- 80959cbb77f7dbc24eb3b3c29936e48faa65b7ff2b0060739f6540056dadee88ad80a7551ea76786f37d69fad24c17c4bc71571e5e8dede8783f010d0c6ae722             1407 Packages
- fd13563c9c02c50762f3aeef3cbeda356499cae7fac3d46ef926f4e48267b102152431399a605fadda37faa4ab992715fa979aaf9f0051176ae9454982f61324              763 Packages.gz
- 38f848bf21f81fceb364ce1485ad217bcf4a8f976a955254a674b12c0b703d59d39b10b2b0fa5e1a875b2852e048b3a6fcfa63c8c66ac80f72b38783b3e41749               38 Release
+ eb787fb06f84168a6c8eb8d795d31d70f6fd8e52f2cf1368415bb0607afe5979bf600102dc0a54c1a04e7bf874bbe168356cfed4dbdf5bd534c51097ef437682              203 Release
+ bc7ae1915fd27edb1dd364bcfe75a17b3f3757c5657246ff09587f66c91c523056252d6bb322ac93ce775660764858e82835f7468990f8ab2bb8b524e4e7d9cf             2253 main/Packages
+ 5894ad0518f914ce74131da1b9fa067f54cdf2cea64f6e39c76ebebf28727426ee9fd0716d3606a8d9b4b93b7d7594b6a9dfa12c9ea6a5226f5fd8d5a6652153             1196 main/Packages.xz
+ 8c0a43430e647ffd6cc709784ad287beabb80ed51c93f1710687cb1d2917724c233ea6c58a92a7e89b1acebb356c08d14ddc05b0c90e92fffd6a9eac914099ec             1730 main/binary-all/Packages
+ fcaffe05efc999039fa420d48f9f0d34ebc3d7eaa5335f2f654ebcee8027c3dc023a6060fed0e7fdccee1796959a7ab36579e995b6e55d2a50ba96408f4654c0              980 main/binary-all/Packages.xz
+ daa29e4868eb85249706f8ffb652f7625c790ff9fceb0aefee03762cd4471cb1a9a30e2554ee87fb8f2c683a2ce517c6e5d80994f1c3a69ed75aaee042b2d485              523 main/binary-amd64/Packages
+ 3f3bd2baf24ed017a4878a2f9a41fe7f9a656f7cf74d426efb31459d780b6bbe786d7a00bf7f4592e65844652a74d91cae683cbfeeb66929fc15478915b26600              484 main/binary-amd64/Packages.xz

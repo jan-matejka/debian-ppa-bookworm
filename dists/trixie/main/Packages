@@ -1,0 +1,65 @@
+Package: cnb
+Version: 0.2.1-1
+Architecture: all
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 24
+Depends: zsh, curl, xdgenv
+Filename: dists/trixie/main/binary-all/cnb_0.2.1-1_all.deb
+Size: 6912
+MD5sum: 7526d47f936216f5e25f73f4d3e71555
+SHA1: 0e00092597c16a6a03112274b420566f1b679724
+SHA256: 86e815b80150039a5c0b201984cdbc8f8d0fcc2192cfa35401f34c640a058597
+Section: misc
+Priority: optional
+Description: http://cnb.cz daily czech currency exchange rates in your command line
+
+Package: dram
+Version: 0.10-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 1523
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), zlib1g (>= 1:1.1.4)
+Filename: dists/trixie/main/binary-amd64/dram_0.10-1_amd64.deb
+Size: 386700
+MD5sum: 6bad37d793ccb796f1b3bded49faa178
+SHA1: 18d8d15201ee95965e6830a94faf1b5b88e0ee9b
+SHA256: d91cf6f5ecb7866d51c5344009b5daea7d1eb5d3c7626198a2db9978c2361734
+Section: misc
+Priority: optional
+Description: Literate Functional Tests for the CLI
+
+Package: podman-compose
+Version: 1.5.0-1
+Architecture: all
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 281
+Depends: python3-dotenv, python3-yaml, python3:any
+Recommends: podman
+Filename: dists/trixie/main/binary-all/podman-compose_1.5.0-1_all.deb
+Size: 55600
+MD5sum: 009d7ebffe3cd67fdd20f8dc7daf0880
+SHA1: 8d8f91b180e4ae1efe877727db104cd5b318c2e0
+SHA256: c96182af342d19e7c11070ee5add0d3a8519564abe912d4ada5fbda8d8462e35
+Section: admin
+Priority: optional
+Homepage: https://github.com/containers/podman-compose
+Description: Run docker-compose.yml using podman
+ An implementation of docker-compose with podman backend.
+ The main objective of this project is to be able to run docker-compose.yml
+ unmodified and rootless.
+
+Package: xdgenv
+Version: 0.2.0-1
+Architecture: all
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 17
+Depends: zsh
+Filename: dists/trixie/main/binary-all/xdgenv_0.2.0-1_all.deb
+Size: 3496
+MD5sum: 0ad8d9953e5bf191333471d3e86dcb8a
+SHA1: b1f8cdad7dd34234e8280d9158138b42f39ec762
+SHA256: 7eb37481de5a31489b953b8fa868c6b5d40bc971a94323b6e954835953652ea4
+Section: misc
+Priority: optional
+Description: Runtime agnostic xdg environment variables initializer for applications
+

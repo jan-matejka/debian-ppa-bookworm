@@ -1,0 +1,65 @@
+Package: cnb
+Version: 0.2.1-1
+Architecture: all
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 24
+Depends: zsh, curl, xdgenv
+Filename: dists/bookworm/main/binary-all/cnb_0.2.1-1_all.deb
+Size: 6912
+MD5sum: 7526d47f936216f5e25f73f4d3e71555
+SHA1: 0e00092597c16a6a03112274b420566f1b679724
+SHA256: 86e815b80150039a5c0b201984cdbc8f8d0fcc2192cfa35401f34c640a058597
+Section: misc
+Priority: optional
+Description: http://cnb.cz daily czech currency exchange rates in your command line
+
+Package: dram
+Version: 0.8-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 1191
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libphobos2-ldc-shared100 (>= 1:1.30.0)
+Filename: dists/bookworm/main/binary-amd64/dram_0.8-1_amd64.deb
+Size: 235880
+MD5sum: dbb54d88d3f06e8aa0deb1f53905e673
+SHA1: dc7117002b6231d2db726015a7aa66faf578b1be
+SHA256: 8b20254ff542126b6bedc413fac74fabb1b5ea2f25715fcf34b79f716af6157f
+Section: misc
+Priority: optional
+Description: Literate Functional Tests for the CLI
+
+Package: podman-compose
+Version: 1.2.0-2
+Architecture: all
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 240
+Depends: python3-dotenv, python3-yaml, python3:any
+Recommends: podman
+Filename: dists/bookworm/main/binary-all/podman-compose_1.2.0-2_all.deb
+Size: 45536
+MD5sum: be90597fe5ecff4ea2a6097c5fe01e24
+SHA1: a5a517ed2c43e6df95bb04ec52882b9468c0509c
+SHA256: b1d9f596304343ed3b0df43670a7762b35865e70ab774e8e96cd9fae56b63d04
+Section: admin
+Priority: optional
+Homepage: https://github.com/containers/podman-compose
+Description: Run docker-compose.yml using podman
+ An implementation of docker-compose with podman backend.
+ The main objective of this project is to be able to run docker-compose.yml
+ unmodified and rootless.
+
+Package: xdgenv
+Version: 0.2.0-1
+Architecture: all
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 17
+Depends: zsh
+Filename: dists/bookworm/main/binary-all/xdgenv_0.2.0-1_all.deb
+Size: 3496
+MD5sum: 0ad8d9953e5bf191333471d3e86dcb8a
+SHA1: b1f8cdad7dd34234e8280d9158138b42f39ec762
+SHA256: 7eb37481de5a31489b953b8fa868c6b5d40bc971a94323b6e954835953652ea4
+Section: misc
+Priority: optional
+Description: Runtime agnostic xdg environment variables initializer for applications
+
