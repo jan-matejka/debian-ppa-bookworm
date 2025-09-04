@@ -10,11 +10,11 @@ arches=( all amd64 )
 for dist in $dists; do
   pushd -q dists/$dist
   pushd -q main
-  dpkg-scanpackages --multiversion . | gzip -c - > Packages.gz
+  dpkg-scanpackages --multiversion . | xz -zc > Packages.xz
 
   for arch in $arches; do
     pushd -q binary-$arch
-    dpkg-scanpackages --multiversion . | gzip -c - > Packages.gz
+    dpkg-scanpackages --multiversion . | xz -zc > Packages.xz
     popd -q
   done
 
