@@ -1,0 +1,126 @@
+ dpkg-buildpackage -us -uc -ui -i -I
+dpkg-buildpackage: info: source package podman-compose
+dpkg-buildpackage: info: source version 1.5.0-1
+dpkg-buildpackage: info: source distribution stable
+dpkg-buildpackage: info: source changed by Jan Matejka <jmatejka01@gmail.com>
+ dpkg-source -i -I --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: info: using options from podman-compose/debian/source/options: --extend-diff-ignore=^[^/]*[.]egg-info/
+ debian/rules clean
+dh clean --with python3 --buildsystem=pybuild
+   dh_auto_clean -O--buildsystem=pybuild
+   dh_autoreconf_clean -O--buildsystem=pybuild
+   dh_clean -O--buildsystem=pybuild
+ dpkg-source -i -I -b .
+dpkg-source: info: using options from podman-compose/debian/source/options: --extend-diff-ignore=^[^/]*[.]egg-info/
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building podman-compose using existing ./podman-compose_1.5.0.orig.tar.gz
+dpkg-source: info: building podman-compose in podman-compose_1.5.0-1.debian.tar.xz
+dpkg-source: info: building podman-compose in podman-compose_1.5.0-1.dsc
+ debian/rules binary
+dh binary --with python3 --buildsystem=pybuild
+   dh_update_autotools_config -O--buildsystem=pybuild
+   dh_autoreconf -O--buildsystem=pybuild
+   dh_auto_configure -O--buildsystem=pybuild
+   dh_auto_build -O--buildsystem=pybuild
+I: pybuild plugin_pyproject:129: Building wheel for python3.13 with "build" module
+I: pybuild base:311: python3.13 -m build --skip-dependency-check --no-isolation --wheel --outdir /home/alex/git/debian/podman-compose/.pybuild/cpython3_3.13_podman-compose  
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib
+copying podman_compose.py -> build/lib
+running egg_info
+creating podman_compose.egg-info
+writing podman_compose.egg-info/PKG-INFO
+writing dependency_links to podman_compose.egg-info/dependency_links.txt
+writing entry points to podman_compose.egg-info/entry_points.txt
+writing requirements to podman_compose.egg-info/requires.txt
+writing top-level names to podman_compose.egg-info/top_level.txt
+writing manifest file 'podman_compose.egg-info/SOURCES.txt'
+reading manifest file 'podman_compose.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'podman_compose.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib/podman_compose.py -> build/bdist.linux-x86_64/wheel/.
+running install_egg_info
+Copying podman_compose.egg-info to build/bdist.linux-x86_64/wheel/./podman_compose-1.5.0.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/podman_compose-1.5.0.dist-info/WHEEL
+creating '/home/alex/git/debian/podman-compose/.pybuild/cpython3_3.13_podman-compose/.tmp-zxjzs50k/podman_compose-1.5.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'podman_compose.py'
+adding 'podman_compose-1.5.0.dist-info/licenses/LICENSE'
+adding 'podman_compose-1.5.0.dist-info/METADATA'
+adding 'podman_compose-1.5.0.dist-info/WHEEL'
+adding 'podman_compose-1.5.0.dist-info/entry_points.txt'
+adding 'podman_compose-1.5.0.dist-info/top_level.txt'
+adding 'podman_compose-1.5.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built podman_compose-1.5.0-py3-none-any.whl
+I: pybuild plugin_pyproject:144: Unpacking wheel built for python3.13 with "installer" module
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/home/alex/git/debian/podman-compose'
+# There are only integration tests which need internet conenction. Skip.
+make[1]: Leaving directory '/home/alex/git/debian/podman-compose'
+   create-stamp debian/debhelper-build-stamp
+   dh_testroot -O--buildsystem=pybuild
+   dh_prep -O--buildsystem=pybuild
+   dh_auto_install --destdir=debian/podman-compose/ -O--buildsystem=pybuild
+I: pybuild plugin_pyproject:178: Copying package built for python3.13 to destdir
+   dh_installdocs -O--buildsystem=pybuild
+   dh_installchangelogs -O--buildsystem=pybuild
+   debian/rules override_dh_installexamples
+make[1]: Entering directory '/home/alex/git/debian/podman-compose'
+# Installing the nodeproj example directory causes lintian to throw a few
+# errors and warnings. Namely, package-contains-eslint-config-file due to
+# examples/nodeproj/.eslintrc.json, privacy-breach-uses-embedded-file due to
+# examples/nodeproj/public/index.html (here lintian suggests using
+# libjs-normalize instead), and package-contains-vcs-control-file due to
+# examples/nodeproj/.gitignore and examples/nodeproj/.home/.gitignore. While
+# we could ignore the false positives and/or remove the offending files,
+# let's just refrain from shipping this particular example and avoid
+# depending (or recommending/suggesting) on libjs-normalize.
+dh_installexamples -X nodeproj
+make[1]: Leaving directory '/home/alex/git/debian/podman-compose'
+   dh_installman -O--buildsystem=pybuild
+   dh_bash-completion -O--buildsystem=pybuild
+   dh_python3 -O--buildsystem=pybuild
+I: dh_python3 tools:114: replacing shebang in debian/podman-compose/usr/bin/podman-compose
+   dh_installsystemduser -O--buildsystem=pybuild
+   dh_perl -O--buildsystem=pybuild
+   dh_link -O--buildsystem=pybuild
+   dh_strip_nondeterminism -O--buildsystem=pybuild
+   dh_compress -O--buildsystem=pybuild
+   dh_fixperms -O--buildsystem=pybuild
+   dh_missing -O--buildsystem=pybuild
+   dh_installdeb -O--buildsystem=pybuild
+   dh_gencontrol -O--buildsystem=pybuild
+   dh_md5sums -O--buildsystem=pybuild
+   dh_builddeb -O--buildsystem=pybuild
+dpkg-deb: building package 'podman-compose' in '../podman-compose_1.5.0-1_all.deb'.
+ dpkg-genbuildinfo -O../podman-compose_1.5.0-1_amd64.buildinfo
+ dpkg-genchanges -O../podman-compose_1.5.0-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source -i -I --after-build .
+dpkg-source: info: using options from podman-compose/debian/source/options: --extend-diff-ignore=^[^/]*[.]egg-info/
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian podman-compose_1.5.0-1_amd64.changes ...
+W: podman-compose source: no-nmu-in-changelog [debian/changelog:1]
+W: podman-compose source: source-nmu-has-incorrect-version-number 1.5.0-1 [debian/changelog:1]
+W: podman-compose: wrong-name-for-upstream-changelog [usr/share/doc/podman-compose/Changelog-1.3.0.md]
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile dsc podman-compose_1.5.0-1.dsc Jan Matejka <jmatejka01@gmail.com>
+
+ fixup_buildinfo podman-compose_1.5.0-1.dsc podman-compose_1.5.0-1_amd64.buildinfo
+ signfile buildinfo podman-compose_1.5.0-1_amd64.buildinfo Jan Matejka <jmatejka01@gmail.com>
+
+ fixup_changes dsc podman-compose_1.5.0-1.dsc podman-compose_1.5.0-1_amd64.changes
+ fixup_changes buildinfo podman-compose_1.5.0-1_amd64.buildinfo podman-compose_1.5.0-1_amd64.changes
+ signfile changes podman-compose_1.5.0-1_amd64.changes Jan Matejka <jmatejka01@gmail.com>
+
+Successfully signed dsc, buildinfo, changes files

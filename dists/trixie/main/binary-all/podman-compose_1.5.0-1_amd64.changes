@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 05 Sep 2025 10:14:40 +0200
+Source: podman-compose
+Binary: podman-compose
+Architecture: source all
+Version: 1.5.0-1
+Distribution: stable
+Urgency: medium
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Changed-By: Jan Matejka <jmatejka01@gmail.com>
+Description:
+ podman-compose - Run docker-compose.yml using podman
+Changes:
+ podman-compose (1.5.0-1) stable; urgency=medium
+ .
+   [ Povilas Kanapickas ]
+   * New upstream version 1.5.0
+Checksums-Sha1:
+ 2813edc7e4cafe109d1f32fd3724dfb996103ec1 1635 podman-compose_1.5.0-1.dsc
+ d80bb5083d941d6f5c48d2b21ee8517a871152ae 128886 podman-compose_1.5.0.orig.tar.gz
+ 29ff1daccb07c31c6875fcee6ad1e31bda0220c5 4412 podman-compose_1.5.0-1.debian.tar.xz
+ 8d8f91b180e4ae1efe877727db104cd5b318c2e0 55600 podman-compose_1.5.0-1_all.deb
+ 5103b851058825b2c9774b78f84a9b635d941bea 6562 podman-compose_1.5.0-1_amd64.buildinfo
+Checksums-Sha256:
+ c93966ea83b23f3fc017d00e6b4988709591acab853b49328d9a46818c17d565 1635 podman-compose_1.5.0-1.dsc
+ a38b529e542e100b96a91ce759b6e05817647b1b16fe03785e19ceb5802898c2 128886 podman-compose_1.5.0.orig.tar.gz
+ c632cbec2602d982a91792a595fa5e046cd90e1b6df798d0f4eff9d03bf8bcaa 4412 podman-compose_1.5.0-1.debian.tar.xz
+ c96182af342d19e7c11070ee5add0d3a8519564abe912d4ada5fbda8d8462e35 55600 podman-compose_1.5.0-1_all.deb
+ 0b11f613a067704a9cc702717e26d4fbe7e42ece7bf4cb2a3314e8476ddc8248 6562 podman-compose_1.5.0-1_amd64.buildinfo
+Files:
+ e34ef0989e92d08b28250a84fdb5301e 1635 admin optional podman-compose_1.5.0-1.dsc
+ 4421611e7d3b203116613e6f2489f2bf 128886 admin optional podman-compose_1.5.0.orig.tar.gz
+ d7894985bd88b9f6fd9bb0c8c95903e9 4412 admin optional podman-compose_1.5.0-1.debian.tar.xz
+ 009d7ebffe3cd67fdd20f8dc7daf0880 55600 admin optional podman-compose_1.5.0-1_all.deb
+ 2b3b3a04be661fa94bdf49280e72ff40 6562 admin optional podman-compose_1.5.0-1_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iIsEARYKADMWIQT76B4BHrs3ymkcWR8rUkGDpNfZCAUCaLqfZhUcam1hdGVqa2Ew
+MUBnbWFpbC5jb20ACgkQK1JBg6TX2QiriQEAu/GWQo0dqoUTxKBdHrVJbW8i4ryd
+WQIX5SwMKTG0/7QA/jC2weuh225DV+JYwG6GNGilCg9mCQgJ+YeM0yiOmVYK
+=WSVq
+-----END PGP SIGNATURE-----
