@@ -14,6 +14,6 @@ Requires: curl, gpg, awk, POSIX shell
    FP=D059E95DB734392F42329FF6AD577215EA45A9341EA1773712FEA1693F291BD658EC029314ED8CC2FBE81E011EBB37CA691C591F2B524183A4D7D908;
    curl -s --compressed $URI/jma-ppa.key | gpg --dearmor -o $KEY;
    [ $(gpg -q --show-keys --with-colons $KEY | awk -F: '$1 == "fpr" { printf $10 }') = $FP ] || { echo 'fingerprint mismatch'; false; };
-   curl -s --compressed $URI/dists/$(awk -F= '$1=="VERSION_CODENAME" {print $2}' /etc/os-release)/jma-ppa.list -o /etc/apt/sources.list.d/jma-ppa.list;
+   curl -s --compressed $URI/dists/$(awk -F= '$1=="VERSION_CODENAME" {print $2}' /etc/os-release)/jma-ppa.sources -o /etc/apt/sources.list.d/jma-ppa.sources;
 
 Based on https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html
