@@ -1,0 +1,60 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 04 Sep 2025 11:17:15 +0200
+Source: dram
+Binary: dram
+Architecture: source amd64
+Version: 0.10-1
+Distribution: stable
+Urgency: medium
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Changed-By: Jan Matějka <jan@matejka.ninja>
+Description:
+ dram       - Literate Functional Tests for the CLI
+Changes:
+ dram (0.10-1) stable; urgency=medium
+ .
+   [ Roman Neuhauser ]
+   * GNUmakefile: install man page
+   * m/dram.1.in: syntax fixes and changes
+   * s/dram.d: correct a comment
+   * m/dram.5.in
+   * flush stdout after each test status in default mode
+   * manpage fixes
+   * dram.d: replace escapeShellCommand with custom code
+ .
+   [ Jan Matějka ]
+   * debian: build for trixie
+   * debian/patches: gbp pq export
+Checksums-Sha1:
+ 041cd1bd2ad00f265fa4e50ba23edbc1b7d9bfcb 1305 dram_0.10-1.dsc
+ 2b7e25bdfc638cf2d4f1dc99c57a04a3254fe8b3 33737 dram_0.10.orig.tar.gz
+ 412152fe590576ff01c236cbe133b3c72adaec29 1648 dram_0.10-1.debian.tar.xz
+ 2efc478151a67cf98c83f4d900399862b80d95a8 6301 dram_0.10-1_amd64.buildinfo
+ 18d8d15201ee95965e6830a94faf1b5b88e0ee9b 386700 dram_0.10-1_amd64.deb
+Checksums-Sha256:
+ 1ab6f13fc05f324774b01f2e590e42508129ee0fe03b5ae56669d3f8b6b6abf3 1305 dram_0.10-1.dsc
+ 25a8af1b96905c4a90f4435bd3e13448f2c41984beb229ecc2d302d6563c53d1 33737 dram_0.10.orig.tar.gz
+ b051224a3a7df472a5db554ae6080fbdae2fc3a9978e2ad59155cbde4b3cf8ec 1648 dram_0.10-1.debian.tar.xz
+ 2134b30d202a62257e2cf1ffea545ced0ea221a2b5a9358f238bdd582a239dd9 6301 dram_0.10-1_amd64.buildinfo
+ d91cf6f5ecb7866d51c5344009b5daea7d1eb5d3c7626198a2db9978c2361734 386700 dram_0.10-1_amd64.deb
+Files:
+ fc0a1b44ac713b7542b302afd71dcf4c 1305 misc optional dram_0.10-1.dsc
+ f09f1192cf239a55a1857b5edb96a751 33737 misc optional dram_0.10.orig.tar.gz
+ 4e04f5849d73345f5d78c69fa7eaadc0 1648 misc optional dram_0.10-1.debian.tar.xz
+ 1112db26716cb5dd1a93cfe340a37f5e 6301 misc optional dram_0.10-1_amd64.buildinfo
+ 6bad37d793ccb796f1b3bded49faa178 386700 misc optional dram_0.10-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCgAwFiEEhFuAua0S20AM5TT2g37tEPl6NqEFAmi5YY4SHGphbkBtYXRl
+amthLm5pbmphAAoJEIN+7RD5ejahbXkIANvV9BMlAjjuf1xYmJ6+93aai0Ih2HcE
+iUGECeNywGcJZxM6K9ckIW8hzuHGQoItS2tNrVSuqKUhVqPAdBwr+1weCFQ5MaZr
+65OCwrFGWlEi/45XMkDR78OEHfA5dHjvfS3XWfqARtY6ffZtLuitH4R97X2u3nkd
+8Pr1ED9BJy7ZAQfTfvMK/LT5CGRlwpRyLCRvuTISq4DiM/DozCXt6/ZcMMfwD0+G
+Z1GGbKeoq64mZq0KzuQtAQTj1hfrym1gfIhaUWK5aX2P9/t6b5O1PidG+qVyAoDV
+PHkCzx6Oe63I8VYhEX4eQ46+422Ea1KAEXQn9vnYroKbHQT/qkKOoFY=
+=+LBz
+-----END PGP SIGNATURE-----
